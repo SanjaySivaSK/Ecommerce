@@ -93,7 +93,7 @@ InitialUsers = [
   },
 ];
 
-window.addEventListener("load", () => {
+window.addEventListener("load", () => { console.log("hi")
   if (!localStorage.getItem("products")) {
     localStorage.setItem("products", JSON.stringify(initialProducts));
   }
