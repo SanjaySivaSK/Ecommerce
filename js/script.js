@@ -93,6 +93,7 @@ InitialUsers = [
   },
 ];
 
+
 window.addEventListener("load", () => { console.log("hi")
   if (!localStorage.getItem("products")) {
     localStorage.setItem("products", JSON.stringify(initialProducts));
@@ -288,6 +289,7 @@ let UserHomePage = () => {
   RowProductRef.innerHTML = Rowproduct;
   console.log(Rowproduct);
 };
+UserHomePage();
 //display the product
 let addproduct = () => {
   const idRef = document.getElementById("id");
