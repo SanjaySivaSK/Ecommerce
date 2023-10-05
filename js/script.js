@@ -306,7 +306,7 @@ let addproduct = () => {
     thumbnail: ImageRef.value,
   });
   localStorage.setItem("products", JSON.stringify(products));
-  location.href = "/admin/index.html";
+  location.href = "/Ecommerce/admin/index.html";
 };
 // edit items in addproduct(push) page
 
@@ -333,7 +333,7 @@ const addtocart = (id) => {
   const addcart = products.find((product) => product.id === parseInt(id));
 
   if (!sessionStorage.getItem("id")) {
-    location.replace("/login.html");
+    location.replace("/Ecommerce/login.html");
   } else {
     let userid = parseInt(sessionStorage.getItem("id"));
     let cart = [];
